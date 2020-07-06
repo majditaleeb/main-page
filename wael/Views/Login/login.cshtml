@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "login";
+
+    Layout = null;
+}
+<link href="~/Content/login.css" rel="stylesheet" />
+<script src="~/Scripts/login.js"></script>
+<div class="background-wrap">
+    <div class="background"></div>
+</div>
+
+<form id="accesspanel" action="login" method="post">
+    <h1 id="litheader" class="m">مكتب الاقصى </h1>
+    <div class="inset">
+        <p>
+            <input type="text" name="username" id="email" placeholder="ادخل اسم المستخدم" style="color:white;">
+        </p>
+        <p>
+            <input type="password" name="password" id="password" placeholder="ادخل كلمة السر" style="color:red;">
+        </p>
+        <div style="text-align: center;">
+          
+        </div>
+        <input class="loginLoginValue" type="hidden" name="service" value="login" />
+    </div>
+    <p class="p-container">
+        <input type="submit" name="Login" id="go" value="تسجيل الدخول">
+    </p>
+</form>

@@ -1,0 +1,210 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/StyleSheet1.css" rel="stylesheet" />
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<body>
+    <div class="container ">
+        <form>
+
+
+
+            <div class="form-group">
+                <!--for driver name-->
+                <div class="row">
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-4 inputGroupContainer">
+                        <label for="inputDirver" class=" control-label">اسم السائق </label>
+
+
+                        <div class="input-group">
+
+
+                            <input placeholder="" class="form-control" type="text" id="inputDirver">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+
+            <!--for number of car-->
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-4 inputGroupContainer">
+                        <label for="inputCarNumber" class=" control-label">رقم السيارة  </label>
+
+
+                        <div class="input-group">
+
+
+                            <input placeholder="" class="form-control" type="text" id="inputCarNumber">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+
+
+
+
+
+            <!--االعنوان من -->
+            <div class="form-group">
+                <div class="row ">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 inputGroupContainer">
+                        <label for="inputFromAddress" class=" control-label">من مكان  </label>
+
+                        <div class="input-group">
+
+
+                            <select name="fromAddres" class="form-control" id=fromWhere style="float:right;">
+
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <option> بيت لحم</option>
+                                <option>رام الله</option>
+                                <option> قدس</option>
+                                <option> اضف عنوان</option>
+                            </select>
+
+                            <input placeholder=" اضف اسم المدينة" class="form-control" type="text" id="inputFromAdded" hidden>
+                            <span class="input-group-addon"> <i class="glyphicon glyphicon-home"></i></span>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <!-- end of from where-->
+            <!-- from to -->
+            <div class="form-group">
+                <div class="row ">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 inputGroupContainer">
+                        <label for="inputToAddress" class=" control-label">الى مكان  </label>
+
+                        <div class="input-group">
+
+
+                            <select name="fromAddres" class="form-control" id=toAddress style="float:right;">
+
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <option> بيت لحم</option>
+                                <option>رام الله</option>
+                                <option> قدس</option>
+                                <option> اضف عنوان</option>
+                            </select>
+                            <input placeholder=" اضف اسم المدينة" class="form-control" type="text" id="inputToAdded" hidden>
+                            <span class="input-group-addon"> <i class="glyphicon glyphicon-home"></i></span>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <!-- Example split danger button -->
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                طريقة الدفع كاش ؟ <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" onchange="selectMenu1">
+                                <li><a href="#">نعم</a></li>
+                                <li><a href="#">لا</a></li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="class col-md-4"></div>
+
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-4 inputGroupContainer">
+                        <label for="price" class=" control-label">السعر   </label>
+
+
+                        <div class="input-group">
+
+
+                            <input placeholder="" class="form-control" type="text" id="inputCarNumber">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-4 inputGroupContainer">
+
+
+
+                        <div class="input-group">
+
+
+                            <button placeholder="" class="form-control" type="submit" id="button">
+                                ارسال
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </form>
+
+    </div>
+
+
+
+
+    <Script src="js/popper.js"></Script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+   
+          
+    </script>
+</body>
